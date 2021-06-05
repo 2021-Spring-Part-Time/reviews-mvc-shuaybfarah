@@ -1,0 +1,57 @@
+*{
+    font-family: sans-serif;
+    line-height: 1.618em;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ body {
+     background-image: url("images/Moderation-in-the-Light-of-the-Qur’an.jpg"), url("paper.gif");
+     background-color: #ccc;
+   }
+
+   .container {
+     background-color: rgb(245, 245, 245);
+     max-width: 60rem;
+     width: 90%;
+     box-shadow: rgba(0, 0, 0, 0.75) 1px 3px 5px 0px;
+     margin: 2rem auto;
+ }
+
+html{
+    font-size: 16px;
+    margin-top: 3em;
+}
+
+header,
+main,
+footer {
+    margin: 0 auto;
+    max-width: 800px;
+
+}
+
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#review_options{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 1em;
+    grid-template-rows: auto;
+}
+
+footer {
+    margin-top: 2em;
+    margin-bottom: 1em;
+    background: #666;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+
