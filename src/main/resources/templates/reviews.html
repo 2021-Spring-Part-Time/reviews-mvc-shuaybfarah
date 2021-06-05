@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<link rel="stylesheet" href="/css/reviews.css">
+
+
+<head>
+    <title>Reviews</title>
+</head>
+<body>
+<div class="container">
+
+
+<header>
+    <h1>Most Authentic books on the Planet</h1>
+</header>
+
+<main>
+    <ul>
+        <li id="review_options" th:each="review: ${reviewsModel}">
+            <a th:href="@{/review(id=${review.id})}" th:text="${review.title}"></a>
+        </li>
+    </ul>
+</main>
+
+<footer>
+    <small>&COPY; weCanCodeIt</small>
+</footer>
+</div>
+</body>
+</html>
